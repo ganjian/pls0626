@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+	<head>
+		<service>
+			<replyCode>0</replyCode>
+			<replyMsg>初始化成功</replyMsg>
+		</service>
+		<createTime>1400137571468</createTime>
+	</head>
+	<body>
+		<items name="diningList">
+			<item>
+				<DININGID>811</DININGID>
+				<DISTANCE>385938</DISTANCE>
+				<ADDRESS>深圳市南山区科技园路15号</ADDRESS>
+				<SERVICEZONE>3</SERVICEZONE>
+				<MONTHSALES>1</MONTHSALES>
+				<LATITUDE>22.562267</LATITUDE>				<PICURL>images/dining/201401211845167.jpg</PICURL>
+				<WORKTIME_Z>21:00</WORKTIME_Z>
+				<DININGMARK>1</DININGMARK>
+				<DININGNO>002R</DININGNO>
+				<TEL>0755-23964040</TEL>
+				<DINING_CSI>5</DINING_CSI>
+				<INTRODUCTION>深圳市一唯客餐饮管理有限公司在深圳乃至华南地区的白领界具有较高的知名度和影响力。</INTRODUCTION>
+				<SPEED_CSI>3</SPEED_CSI>
+				<DININGNAME>唯客</DININGNAME>
+				<PARENTID />
+				<WORKTIME_Q>08:00</WORKTIME_Q>
+				<DOWNPRICE>11.00</DOWNPRICE>
+				<LONGITUDE>113.954321</LONGITUDE>
+			</item>
+		</items>
+	</body>
+</root>

@@ -1,0 +1,1136 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <!--<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.css">
+    <script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script>-->
+    <!--<link rel="stylesheet" type="text/css" href="css/icons.css" />
+    <link rel="stylesheet" type="text/css" href="css/af.ui.css" title="default" />
+    <link rel="stylesheet" type="text/css" href="css/index.css" />-->
+    <script src="jqMobile/jquery.js"></script>
+    <link href="jqMobile/my-custom-theme.css" rel="stylesheet" />
+    <link href="jqMobile/jquery.mobile.icons.min.css" rel="stylesheet" />
+    <link href="jqMobile/jquery.mobile.structure-1.4.2.css" rel="stylesheet" />
+    <!--<link href="jqMobile/jquery.mobile-1.4.2.css" rel="stylesheet" />-->
+    <script src="jqMobile/jquery.mobile-1.4.2.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" />
+    <title>拍乐送 - 送餐版</title>
+</head>
+<body>
+    <!--1.首页 -->
+    <div data-role="page" id="indexpage" style="width:100%;background:#9bbb58">
+        <div data-role="header" style="width:100%;background:#9bbb58">
+
+
+
+            <span style="float: left;"><a href="#pagenemu" data-rel="dialog" class="ui-btn ui-corner-all ui-btn-icon-notext ui-icon-bars" data-transition="pop" data-iconpos="notext" style="border: #9bbb58; background-color: #9bbb58; padding-top: 5px;"></a></span>
+            <span style="float: left;width: 80%;"><input type="text" name="name" data-iconpos="right" id="name" value="" placeholder="输入订单电话号码" /></span>
+            <span style="float: left;"><a href="#" class="ui-btn ui-corner-all ui-btn-icon-notext ui-icon-search" data-iconpos="notext" style="border: #9bbb58; background-color: #9bbb58; padding-top: 5px;"></a></span>
+
+
+
+            <div style="clear: both ;"></div>
+
+        </div>
+
+        <div data-role="content">
+
+            <div style="width:100%;height:280px;background:#9bbb58">
+                <img src="img/pai.jpg" style="display:block;margin:0 auto;padding-top:60px;" />
+            </div>
+            <!--<div style="margin: 0 50px 20px 50px;">
+                <div style="float:left;"><a href="#page4" data-role="button" style="width:60px; height:60px; overflow:visible;" data-transition="slide">外卖<br />列表</a></div>
+                <div style="float:left; margin-left:20px;">
+                    <div><a href="#page5" data-role="button" data-transition="slide">订单结算</a></div>
+                    <div><a href="#page12" data-role="button" data-transition="slide">历史账单</a></div>
+                </div>
+                <div style="clear:both;"></div>
+            </div>
+            <div style="clear:both;"></div>-->
+            <div data-role="controlgroup" data-type="horizontal">
+                <a href="#page4" data-role="button" style="width:60px; height:60px; overflow:visible;" data-transition="slide">外卖<br />列表</a>
+                <div style="float:left; margin-left:20px;">
+                    <div><a href="#page5" data-role="button" data-transition="slide">订单结算</a></div>
+                    <div><a href="#page12" data-role="button" data-transition="slide">历史账单</a></div>
+                </div>
+            </div>
+            <div data-role="controlgroup" data-type="horizontal">
+                <a href="#page7" data-role="button" data-transition="slide">当天结账</a>
+                <a href="#page8" data-role="button" data-transition="slide">对账管理</a>
+                <a href="#page13" data-role="button" data-transition="slide">公司客服</a>
+            </div>
+            <div data-role="controlgroup" data-type="horizontal">
+                <a href="#page10" data-role="button" data-transition="slide">签约餐厅</a>
+                <a href="#page12" data-role="button" data-transition="slide">历史账单</a>
+                <a href="#page9" data-role="button" data-transition="slide">个人设置</a>
+            </div>
+            <!--<div style="float:left; margin-left:20px;"></div>
+            <div style="float:left; margin-left:20px;"><a href="#page8" data-role="button" data-transition="slide">对账管理</a></div>
+            <div style="float:left; margin-left:20px;"><a href="#page13" data-role="button" data-transition="slide">公司客服</a></div>
+            <div style="clear:both;"></div>
+                </div>
+                <div>
+                    <div style="float:left; margin-left:20px;"><a href="#page10" data-role="button" data-transition="slide">签约餐厅</a></div>
+                    <div style="float:left; margin-left:20px;"><a href="#page12" data-role="button" data-transition="slide">历史账单</a></div>
+                    <div style="float:left; margin-left:20px;"><a href="#page9" data-role="button" data-transition="slide">个人设置</a></div>
+                    <div style="clear:both;"></div>
+                </div>-->
+        </div>
+
+        <div data-role="footer">
+
+
+        </div>
+    </div>
+
+    <!--2.菜单 -->
+    <div data-role="page" id="pagenemu" data-rel="dialog">
+        <div data-role="header">
+
+
+        </div>
+
+        <div data-role="content">
+
+            <div data-role="controlgroup">
+                <ul>
+                    <li><a href="#indexpage" data-role="button">送餐首页</a></li>
+                    <li><a href="#page9" data-role="button">个人信息</a></li>
+                    <li><a href="#anylink" data-role="button">积分中心</a></li>
+                    <li><a href="#anylink" data-role="button">分享美食</a></li>
+                    <li><a href="#page13" data-role="button">联系我们</a></li>
+                </ul>
+
+            </div>
+        </div>
+
+        <div data-role="footer">
+
+
+        </div>
+    </div>
+    <!--3.首页2 -->
+    <div data-role="page" id="page2">
+        <div data-role="header" style="width:100%;background:#9bbb58">
+
+            <span style="float: left;"><a href="#" data-role="button" data-icon="home" data-iconpos="notext"></a></span>
+            <span style="float: left;width: 90%;"><input type="search" name="name" id="name" value="" placeholder="输入订单电话号码" /></span>
+
+            <div style="clear: both ;"></div>
+        </div>
+
+        <div data-role="content">
+            <div style="width:100%;height:280px;background:#9bbb58">
+                <img src="img/pai.jpg" style="display:block;margin:0 auto;padding-top:60px;" />
+            </div>
+            <!--  可折叠块--->
+            <div data-icon="arrow-d" data-role="collapsible">
+                <h1>
+                    <div data-role="controlgroup" data-type="horizontal">
+                        <button data-inline="true" style="text-align:center;" data-type="horizontal">3店</button>
+                        <button data-inline="true">20份</button>
+                        <button data-inline="true" id="sendFood">送外卖去</button>
+                    </div>
+                </h1>
+                <p>真功夫。</p>
+                <p>麦当劳。</p>
+                <p>必胜客。</p>
+            </div>
+        </div>
+        <div data-role="footer">
+
+
+        </div>
+    </div>
+
+    <!--4.扫描 -->
+    <div data-role="page" id="page3">
+        <div data-role="header">
+            <h1></h1>
+        </div>
+
+        <div data-role="content">
+
+
+
+
+
+        </div>
+        <div data-role="footer">
+
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#indexpage">送餐首页</a></li>
+                    <li><a href="#page9">个人信息</a></li>
+                    <li><a href="#anylink">积分中心</a></li>
+                    <li><a href="#anylink">分享美食</a></li>
+                    <li><a href="#page13">联系我们</a></li>
+                </ul>
+
+            </div>
+        </div>
+
+
+    </div>
+
+    <!--5.送餐列表 -->
+    <div data-role="page" id="page4">
+        <div data-role="header" style="width:100%;background:#9bbb58">
+
+
+
+            <span style="float: left;">
+                <a href="#" data-inline="true" data-role="button" class="ui-btn ui-corner-all ui-btn-icon-notext ui-icon-arrow-l" data-icon="arrow-l" data-iconpos="notext" style="border: #9bbb58; background-color: #9bbb58; padding-top: 5px;"></a>
+            </span>
+            <div style="width: 70%; text-align: center; float: left;">送餐列表</div>
+            <span style="float: right;" data-type="horizontal" data-inline="true" data-icon="map" title="地图">地图</span>
+            <div style="clear:both;"></div>
+
+            <span style="float: left; width:80%;"><input type="search" name="name" id="name" value="" placeholder="输入订单电话号码、餐厅编号" /></span>
+
+            <span style="float: right; width:20%;margin-top:2px;" data-type="horizontal" data-inline="true" data-icon="map" title="地图">  <button>排序</button>  </span>
+
+            <div style="clear: both ;"></div>
+        </div>
+
+        <div data-role="content">
+            <div style="border: solid 1px #9bbb58">
+                <!--一个详细列表信息--->
+                <div style="float:left">
+                    <div>
+                        <span style="color:red;">13088888888</span>
+                        <span>先生</span>
+                    </div>
+                    <div style="margin:10px 0 10px 0;">科技园北区3-36栋</div>
+                    <div>真功夫店餐品3份 ￥18</div>
+                </div>
+                <div style="float:right;">
+                    <div style=""> 10:23 </div>
+                    <div style="margin: 10px 0 10px 0; background-color: #9bbb58">00:2</div>
+                    <div style="background-color:#077609">置顶</div>
+                </div>
+                <div style="clear:both;"></div>
+            </div>
+            <div style="border: solid 1px #9bbb58">
+                <!--一个详细列表信息--->
+                <div style="float:left">
+                    <div>
+                        <span style="color:red;">13088888888</span>
+                        <span>先生</span>
+                    </div>
+                    <div style="margin:10px 0 10px 0;">科技园北区3-36栋</div>
+                    <div>真功夫店餐品3份 ￥18</div>
+                </div>
+                <div style="float:right;">
+                    <div>10:23 </div>
+                    <div style="margin: 10px 0 10px 0; background-color: #9bbb58">00:2</div>
+                    <div style="background-color:#077609">置顶</div>
+                </div>
+                <div style="clear:both;"></div>
+            </div>
+
+
+
+            <div style="border: solid 1px #9bbb58">
+                <!--一个详细列表信息--->
+                <div style="float:left">
+                    <div>
+                        <span style="color:red;">13088888888</span>
+                        <span>先生</span>
+                    </div>
+                    <div style="margin:10px 0 10px 0;">科技园北区3-36栋</div>
+                    <div>真功夫店餐品3份 ￥18</div>
+                </div>
+                <div style="float:right;">
+                    <div>10:23 </div>
+                    <div style=" background-color: #9bbb58">00:2</div>
+                    <div style="background-color:#077609">置顶</div>
+                </div>
+                <div style="clear:both;"></div>
+            </div>
+
+
+            <div>催单 2  超时1 <span style="background-color: #9bbb58">￥787</span></div>
+
+        </div>
+        <div data-role="footer">
+
+
+        </div>
+    </div>
+
+    <!--6.订单结算 -->
+    <div data-role="page" id="page5">
+        <div data-role="header" style="width:100%;background:#9bbb58">
+            <span style="float: left;">
+                <a href="#" data-inline="true" data-role="button" class="ui-btn ui-corner-all ui-btn-icon-notext ui-icon-arrow-l" data-icon="arrow-l" data-iconpos="notext" style="border: #9bbb58; background-color: #9bbb58; "></a>
+            </span>
+            <div style="width: 70%; text-align: center; float: left;">订单结算</div>
+            <span style="float: right;" data-type="horizontal" data-inline="true" data-icon="map" title="地图">地图</span>
+            <div style="clear:both;"></div>
+        </div>
+
+        <div data-role="content">
+            <div style="border: solid 1px #9bbb58">
+                <!--一个详细列表信息--->
+                <div style="float:left">
+                    <div>
+                        <span style="color:red;">13088888888</span>
+                        <span>先生</span>
+                    </div>
+                    <div style="margin:10px 0 10px 0;">科技园北区3-36栋</div>
+                    <div>真功夫店餐品3份<span style="background-color:red"> ￥18</span></div>
+                </div>
+                <div style="float:right;">
+                    <div>10:23 </div>
+                    <div style=" background-color: #9bbb58">00:2</div>
+
+                </div>
+                <div style="clear:both;"></div>
+            </div>
+            <hr />
+
+            <div>鱼香肉丝 ￥24   x2</div>
+            <div>尖椒牛肉 ￥18   x1</div>
+            <div style="text-align:center;">二维码</div>
+            <div style="text-align:center;">二维码</div>
+
+
+            <hr style="border: solid 1px #9bbb58" />
+            <div style="padding: -10px  -10px -10px  -10px;" data-role="fieldcontain">
+                <div style="background-color:#ff6a00; " data-role="fieldcontain">
+                    <label for="cuidan">催单:</label>
+                    <input id="cuidan" data-inline="true" value="哥你快点啊，我肚子饿了" />
+                </div>
+
+                <div style="background-color: #9bbb58" data-role="fieldcontain">
+                    <label for="ftime">时间:</label>
+                    <input id="ftime" value="尽快送出，25分钟内" />
+                </div>
+                <div style="background-color: #9bbb58" data-role="fieldcontain">
+                    <label for="fmoney">结算:</label>
+                    <input id="fmoney" value="现金" />
+                </div>
+            </div>
+
+            <div><button style="background-color:red; color:white;">确认收款</button></div>
+        </div>
+        <div data-role="footer">
+
+        </div>
+    </div>
+
+    <!--7.订单地图 -->
+    <div data-role="page" id="page6">
+        <div data-role="header">
+            <h1></h1>
+        </div>
+
+        <div data-role="content">
+            <p>这个是第二页</p>
+        </div>
+        <div data-role="footer">
+
+        </div>
+    </div>
+
+    <!--8.当天结算 -->
+    <div data-role="page" id="page7">
+        <div data-role="header" style="width:100%;background:#9bbb58">
+            <span style="float: left;">
+                <a href="#" data-inline="true" data-role="button" class="ui-btn ui-corner-all ui-btn-icon-notext ui-icon-arrow-l" data-icon="arrow-l" data-iconpos="notext" style="border: #9bbb58; background-color: #9bbb58; "></a>
+            </span>
+            <div style="width: 70%; text-align: center; float: left;">当天账单结算</div>
+            <span style="float: right;" data-type="horizontal" data-inline="true" data-icon="map" title="地图" class="ui-btn-right">提交</span>
+            <div style="clear:both;"></div>
+        </div>
+
+        <div data-role="content">
+            <a href="#page71">
+                <div style="border: solid 1px #9bbb58">
+                    <!--一个详细列表信息--->
+                    <div>
+                        <div style="float:left; width:30%;"> <img src="" alt="商家图片" />  </div>
+                        <div style="float:left; margin:0 20px 0 20px; width:20%;">3份</div>
+                        <div style="float:left; width:30%;"> ￥188</div>
+                    </div>
+                    <div style="clear:both;"></div>
+                </div>
+            </a>
+            <div style="border: solid 1px #9bbb58">
+                <!--一个详细列表信息--->
+                <div>
+                    <div style="float:left; width:30%;"> <img src="" alt="商家图片" />  </div>
+                    <div style="float:left; margin:0 20px 0 20px; width:20%;">8份</div>
+                    <div style="float:left; width:30%;"> ￥288</div>
+                </div>
+                <div style="clear:both;"></div>
+            </div>
+            <div style="border: solid 1px #9bbb58">
+                <!--一个详细列表信息--->
+                <div>
+                    <div style="float:left; width:30%;"> <img src="" alt="商家图片" />  </div>
+                    <div style="float:left; margin:0 20px 0 20px; width:20%;">11份</div>
+                    <div style="float:left; width:30%;"> ￥388</div>
+                </div>
+                <div style="clear:both;"></div>
+            </div>
+
+
+
+
+        </div>
+
+        <div data-role="footer">
+
+
+        </div>
+    </div>
+
+    <!--9.详细结算 -->
+    <div data-role="page" id="page71">
+        <div data-role="header" style="width:100%;background:#9bbb58">
+            <span style="float: left;">
+                <a href="#page7" data-inline="true" data-role="button" class="ui-btn ui-corner-all ui-btn-icon-notext ui-icon-arrow-l" data-icon="arrow-l" data-iconpos="notext" style="border: #9bbb58; background-color: #9bbb58; "></a>
+            </span>
+
+            <div style="width: 70%; text-align: center; float: left;">详细账单结算</div>
+            <span style="float: right;" data-type="horizontal" data-inline="true" data-icon="map" title="地图">提交</span>
+            <div style="clear:both;"></div>
+        </div>
+
+        <div data-role="content">
+
+            <div style="padding:10px 10px 10px 10px;">
+                真功夫南山店
+                <div style="margin: 0 10px 0 10px; background: #9bbb58;">
+                    <div style="width:100%;">
+                        <span style="color:white;width:20%">时间:</span>
+                        <span style="background-color:white;width:80%">当天/最近未结算</span>
+                    </div>
+                    <div>
+                        <span style="color:white;width:20%">订单:</span>
+                        <span style="background-color:white;width:30%">3</span>&nbsp;&nbsp;&nbsp;
+                        <span style="color:white;width:20%">金额:</span>
+                        <span style="background-color:white;width:30%">￥188</span>
+                    </div>
+                </div>
+            </div>
+
+            <div style="border: solid 1px #9bbb58">
+                <!--一个详细列表信息--->
+                <div style="float:left">
+                    <div>
+                        <span style="color:red;">13088888888</span>
+                        <span>先生</span>
+                    </div>
+                    <div style="margin:10px 0 10px 0;">科技园北区3-36栋</div>
+                    <div>餐品3份 </div>
+                </div>
+                <div style="float:right;">
+                    <div style=""> ￥18</div>
+                    <div style="margin: 10px 0 10px 0; background-color: #9bbb58">10:06</div>
+                    <div style="background-color:#077609">10:36</div>
+                </div>
+                <div style="clear:both;"></div>
+            </div>
+            <div style="border: solid 1px #9bbb58">
+                <!--一个详细列表信息--->
+                <div style="float:left">
+                    <div>
+                        <span style="color:red;">13088888888</span>
+                        <span>先生</span>
+                    </div>
+                    <div style="margin:10px 0 10px 0;">科技园北区3-36栋</div>
+                    <div>餐品3份 </div>
+                </div>
+                <div style="float:right;">
+                    <div style=""> ￥18</div>
+                    <div style="margin: 10px 0 10px 0; background-color: #9bbb58">10:06</div>
+                    <div style="background-color:#077609">10:36</div>
+                </div>
+                <div style="clear:both;"></div>
+            </div>
+            <div style="border: solid 1px #9bbb58">
+                <!--一个详细列表信息--->
+                <div style="float:left">
+                    <div>
+                        <span style="color:red;">13088888888</span>
+                        <span>先生</span>
+                    </div>
+                    <div style="margin:10px 0 10px 0;">科技园北区3-36栋</div>
+                    <div>餐品3份 </div>
+                </div>
+                <div style="float:right;">
+                    <div style=""> ￥18</div>
+                    <div style="margin: 10px 0 10px 0; background-color: #9bbb58">10:06</div>
+                    <div style="background-color:#077609">10:36</div>
+                </div>
+                <div style="clear:both;"></div>
+            </div>
+
+        </div>
+
+        <div data-role="footer">
+
+
+        </div>
+    </div>
+
+    <!--10.对账管理 -->
+    <div data-role="page" id="page8">
+        <div data-role="header" style="width:100%;background:#9bbb58">
+            <span style="float: left;">
+                <a href="#" data-inline="true" data-role="button" class="ui-btn ui-corner-all ui-btn-icon-notext ui-icon-arrow-l" data-icon="arrow-l" data-iconpos="notext" style="border: #9bbb58; background-color: #9bbb58; "></a>
+            </span>
+            <div style="width: 70%; text-align: center; float: left;">对账管理</div>
+            <span style="float: right;" data-type="horizontal" data-inline="true" data-icon="map" title="地图">结算</span>
+            <div style="clear:both;"></div>
+        </div>
+
+        <div data-role="content">
+
+            <div style="padding:5px 5px 10px 10px;">
+                王某某
+                <br />
+                <div style="margin: 0 10px 0 10px; background: #9bbb58;">
+                    <div style="width:100%;">
+                        <span style="color:white;width:20%">时间:</span>
+                        <span style="background-color:white;width:80%">当天/最近未结算</span>
+                    </div>
+                    <div>
+                        <span style="color:white;width:20%">份数:</span>
+                        <span style="background-color:white;width:30%">300</span>&nbsp;&nbsp;&nbsp;
+                        <span style="color:white;width:20%">金额:</span>
+                        <span style="background-color:white;width:30%">￥1888</span>
+                    </div>
+                    <div style="width:100%;">
+                        <span style="color:white;width:20%">应计酬金:</span>
+                        <span style="background-color:white;width:80%">888</span>
+                    </div>
+                </div>
+            </div>
+
+            <div style="border: solid 1px #808080; padding: 5px 5px 5px 5px; ">
+                <!--一个详细列表信息--->
+                <div style="float:left">
+                    <div style="text-align:center; padding:10px 10px 0 10px ;">3月1日 </div>
+                </div>
+                <div style="float: right; background: #9bbb58;">
+                    <div>
+                        <span style="color:white;width:20%">份数:</span>
+                        <span style="background-color:white;width:30%">3</span>&nbsp;&nbsp;&nbsp;
+                        <div>
+                            <span style="color:white;width:20%">金额:</span>
+                            <span style="background-color:white;width:30%">￥188</span>
+                        </div>
+                    </div>
+                </div>
+                <div style="clear:both;"></div>
+            </div>
+            <div style="border: solid 1px #808080; padding: 5px 5px 5px 5px; ">
+                <!--一个详细列表信息--->
+                <div style="float:left">
+                    <div style="text-align:center; padding:10px 10px 0 10px ;">3月2日 </div>
+                </div>
+                <div style="float: right; background: #9bbb58;">
+                    <div>
+                        <span style="color:white;width:20%">份数:</span>
+                        <span style="background-color:white;width:30%">4</span>&nbsp;&nbsp;&nbsp;
+                        <div>
+                            <span style="color:white;width:20%">金额:</span>
+                            <span style="background-color:white;width:30%">￥288</span>
+                        </div>
+                    </div>
+                </div>
+                <div style="clear:both;"></div>
+            </div>
+            <div style="border: solid 1px #808080;padding:5px 5px 5px 5px;">
+                <!--一个详细列表信息--->
+                <div style="float:left">
+                    <div style="text-align:center; padding:10px 10px 0 10px ;">3月3日 </div>
+                </div>
+                <div style="float: right; background: #9bbb58;">
+                    <div>
+                        <span style="color:white;width:20%">份数:</span>
+                        <span style="background-color:white;width:30%">5</span>&nbsp;&nbsp;&nbsp;
+                        <div>
+                            <span style="color:white;width:20%">金额:</span>
+                            <span style="background-color:white;width:30%">￥388</span>
+                        </div>
+                    </div>
+                </div>
+                <div style="clear:both;"></div>
+            </div>
+
+
+
+
+        </div>
+        <div data-role="footer">
+
+
+        </div>
+    </div>
+
+    <!--11.账单结算 -->
+    <div data-role="page" id="page81">
+        <div data-role="header" style="width:100%;background:#9bbb58">
+            <span style="float: left;">
+                <a href="#page8" data-inline="true" data-role="button" class="ui-btn ui-corner-all ui-btn-icon-notext ui-icon-arrow-l" data-icon="arrow-l" data-iconpos="notext" style="border: #9bbb58; background-color: #9bbb58; "></a>
+            </span>
+            <div style="width: 70%; text-align: center; float: left;">账单结算</div>
+            <!--<span style="float: right;" data-type="horizontal" data-inline="true" data-icon="map" title="地图">结算</span>-->
+            <div style="clear:both;"></div>
+        </div>
+
+        <div data-role="content">
+            <a href="#page71">
+                <div style="border: solid 1px #9bbb58">
+                    <!--一个详细列表信息--->
+                    <div>
+                        <div style="float:left; width:30%;"> <img src="" alt="商家图片" />  </div>
+                        <div style="float:left; margin:0 20px 0 20px; width:20%;">3份</div>
+                        <div style="float:left; width:30%;"> ￥188</div>
+                    </div>
+                    <div style="clear:both;"></div>
+                </div>
+            </a>
+            <div style="border: solid 1px #9bbb58">
+                <!--一个详细列表信息--->
+                <div>
+                    <div style="float:left; width:30%;"> <img src="" alt="商家图片" />  </div>
+                    <div style="float:left; margin:0 20px 0 20px; width:20%;">8份</div>
+                    <div style="float:left; width:30%;"> ￥288</div>
+                </div>
+                <div style="clear:both;"></div>
+            </div>
+            <div style="border: solid 1px #9bbb58">
+                <!--一个详细列表信息--->
+                <div>
+                    <div style="float:left; width:30%;"> <img src="" alt="商家图片" />  </div>
+                    <div style="float:left; margin:0 20px 0 20px; width:20%;">11份</div>
+                    <div style="float:left; width:30%;"> ￥388</div>
+                </div>
+                <div style="clear:both;"></div>
+            </div>
+
+
+
+
+
+        </div>
+        <div data-role="footer">
+
+
+        </div>
+    </div>
+
+    <!--12.个人信息1 -->
+    <div data-role="page" id="page9">
+        <div data-role="header" style="width:100%;background:#9bbb58">
+            <span style="float: left;">
+                <a href="#" data-inline="true" data-role="button" class="ui-btn ui-corner-all ui-btn-icon-notext ui-icon-arrow-l" data-icon="arrow-l" data-iconpos="notext" style="border: #9bbb58; background-color: #9bbb58; "></a>
+            </span>
+            <div style="width: 70%; text-align: center; float: left;">个人信息</div>
+            <!--<span style="float: right;" data-type="horizontal" data-inline="true" data-icon="map" title="地图">提交</span>-->
+            <div style="clear:both;"></div>
+        </div>
+
+        <div data-role="content">
+            <div>
+                <div style="float:left;"> <img src="" alt="默认头像" /></div>
+                <div style="float:left;">
+                    <fieldset data-role="controlgroup" data-inline="true">
+                        <div style="float:left;margin-right:10px;margin-left:20px;">
+                            <label for="male">帅锅</label>
+                            <input type="radio" name="gender" id="male" value="male">
+                        </div>
+                        <div style="float:left;">
+                            <label for="female">美眉</label>
+                            <input type="radio" name="gender" id="female" value="female">
+                        </div>
+                    </fieldset>
+                    <div style="padding-left:10px;"><input placeholder="昵称（不可缺省）" /></div>
+                </div>
+            </div>
+            <div style="clear:both;"></div>
+            <hr style="border: solid 1px #9bbb58" />
+
+
+            <div style="background-color: #9bbb58; color:white;" data-role="fieldcontain">
+                <label for="fmoney">地址</label>
+                <input id="fmoney" value="" placeholder="使用地图输入新地址..." />
+            </div>
+            <div style="background-color: #9bbb58; color: white;" data-role="fieldcontain">
+                <label for="fmoney1">电话</label>
+                <div style="width:55%;float:left;"><input id="fmoney1" value="13512354532" /></div>
+                <label for="fmoney1" id="btnyanzhengma">验证码</label>
+            </div>
+            <div style="background-color: #9bbb58; color: white;" data-role="fieldcontain">
+                <label for="fmoney2">验证码</label>
+                <input id="fmoney2" value=" " />
+            </div>
+
+
+
+
+
+            <div style="text-align:center;"><button style="background-color:red; color:white;width:60%; text-align:center;">确认</button></div>
+        </div>
+
+        <div data-role="footer">
+
+
+        </div>
+    </div>
+
+    <!--13.个人信息2 -->
+    <div data-role="page" id="page91">
+        <div data-role="header" style="width:100%;background:#9bbb58">
+            <span style="float: left;">
+                <a href="#" data-inline="true" data-role="button" class="ui-btn ui-corner-all ui-btn-icon-notext ui-icon-arrow-l" data-icon="arrow-l" data-iconpos="notext" style="border: #9bbb58; background-color: #9bbb58; "></a>
+            </span>
+            <div style="width: 70%; text-align: center; float: left;">个人信息</div>
+            <span style="float: right;" data-type="horizontal" data-inline="true" data-icon="map" title="地图">编辑</span>
+            <div style="clear:both;"></div>
+        </div>
+
+        <div data-role="content">
+            <div>
+                <div style="float:left;"> <img src="" alt="默认头像" /></div>
+                <div style="float:left;">
+                    <fieldset data-role="controlgroup" data-inline="true">
+                        <div style="float:left;margin-right:10px;margin-left:20px;">
+                            <label for="male">帅锅</label>
+                            <input type="radio" name="gender" id="male" value="male">
+                        </div>
+                        <div style="float:left;">
+                            <label for="female">美眉</label>
+                            <input type="radio" name="gender" id="female" value="female">
+                        </div>
+                    </fieldset>
+                </div>
+            </div>
+            <div style="clear:both;"></div>
+            <hr style="border: solid 1px #9bbb58" />
+
+
+            <div style="background-color: #9bbb58; color:white;" data-role="fieldcontain">
+                <label for="fmoney">地址</label>
+                <input id="fmoney" value="南山科技园南二路十大大厦" />
+            </div>
+            <div style="background-color: #9bbb58; color: white;" data-role="fieldcontain">
+                <label for="fmoney1">电话</label>
+                <input id="fmoney1" value="13512354532" />
+            </div>
+
+            <hr style="border: solid 1px #9bbb58" />
+
+            <div style="text-align:center;font-size:larger; font-weight:bolder;">
+                我想要
+            </div>
+            <div style="text-align: center; align-content: center; align-self: center; align-items: center; margin-left: auto; margin-right: auto;">
+                <div style=" background-color: green; width: 160px; text-align: center; align-content: center; align-self: center; align-items: center; margin-left: auto; margin-right: auto;">
+                    <div style="float:left; color: white; width: 80px;">签约<br />拍乐送</div>
+                    <div style="background-color:lightgrey;float:left;width:80px;">签约<br />店铺</div>
+                    <div style="clear:both;"></div>
+                </div>
+            </div>
+
+        </div>
+        <div data-role="footer">
+
+
+        </div>
+    </div>
+
+    <!--14.签约餐厅 -->
+    <div data-role="page" id="page10">
+        <div data-role="header" style="width:100%;background:#9bbb58">
+            <span style="float: left;">
+                <a href="#" data-inline="true" data-role="button" class="ui-btn ui-corner-all ui-btn-icon-notext ui-icon-arrow-l" data-icon="arrow-l" data-iconpos="notext" style="border: #9bbb58; background-color: #9bbb58; "></a>
+            </span>
+            <div style="width: 70%; text-align: center; float: left;">签约餐厅</div>
+            <span style="float: right;" data-type="horizontal" data-inline="true" data-icon="map" title="地图">地图</span>
+            <div style="clear:both;"></div>
+            <span style="float: left;"></span>
+            <span style="float: left;width: 90%;"><input type="search" name="name" id="name" value="" placeholder="输入餐厅名称" /></span>
+            <span style="float: right; vertical-align:bottom;padding-top:10px;" data-type="horizontal" data-inline="true" data-icon="map" title="提交">提交</span>
+
+            <div style="clear: both ;"></div>
+        </div>
+
+
+        <div data-role="content">
+
+
+            <div>
+                真功夫
+                <select name="switch" id="switch" data-role="slider">
+                    <option value="on"> </option>
+                    <option value="off"> </option>
+                </select>
+            </div>
+
+            <div>真功夫</div>
+            <div>真功夫</div>
+
+            <div>真功夫</div>
+            <div>真功夫</div>
+            <div>真功夫</div>
+
+
+        </div>
+        <div data-role="footer">
+
+
+        </div>
+    </div>
+
+    <!--15.签约餐厅详情 -->
+    <div data-role="page" id="page10-1">
+        <div data-role="header" style="width:100%;background:#9bbb58">
+            <span style="float: left;">
+                <a href="#page10" data-inline="true" data-role="button" class="ui-btn ui-corner-all ui-btn-icon-notext ui-icon-arrow-l" data-icon="arrow-l" data-iconpos="notext" style="border: #9bbb58; background-color: #9bbb58; "></a>
+            </span>
+            <div style="width: 70%; text-align: center; float: left;">蒸功夫南山店</div>
+            <span style="float: right;" data-type="horizontal" data-inline="true" data-icon="map" title="菜单">菜单</span>
+            <div style="clear:both;"></div>
+
+
+            <div style="clear: both ;"></div>
+        </div>
+
+
+        <div data-role="content">
+
+
+            <div>
+                真功夫
+                <select name="switch" id="switch" data-role="slider">
+                    <option value="on"> </option>
+                    <option value="off"> </option>
+                </select>
+            </div>
+
+            <div>真功夫</div>
+            <div>真功夫</div>
+
+            <div>真功夫</div>
+            <div>真功夫</div>
+            <div>真功夫</div>
+
+
+        </div>
+
+        <div data-role="footer">
+
+        </div>
+    </div>
+
+    <!--16.签约餐厅菜单 -->
+    <div data-role="page" id="page10-2">
+        <div data-role="header" style="width:100%;background:#9bbb58">
+            <span style="float: left;">
+                <a href="#page10-1" data-inline="true" data-role="button" class="ui-btn ui-corner-all ui-btn-icon-notext ui-icon-arrow-l" data-icon="arrow-l" data-iconpos="notext" style="border: #9bbb58; background-color: #9bbb58; "></a>
+            </span>
+            <div style="width: 70%; text-align: center; float: left;">蒸功夫南山店菜单</div>
+            <span style="float: right;" data-type="horizontal" data-inline="true" data-icon="map" title="菜单">菜单</span>
+            <div style="clear:both;"></div>
+
+
+            <div style="clear: both ;"></div>
+        </div>
+
+
+        <div data-role="content">
+
+
+            <div>
+                真功夫
+                <select name="switch" id="switch" data-role="slider">
+                    <option value="on"> </option>
+                    <option value="off"> </option>
+                </select>
+            </div>
+
+            <div>真功夫</div>
+            <div>真功夫</div>
+
+            <div>真功夫</div>
+            <div>真功夫</div>
+            <div>真功夫</div>
+
+
+        </div>
+        <div data-role="footer">
+
+        </div>
+    </div>
+
+    <!--17.签约公司 -->
+    <div data-role="page" id="page11">
+        <div data-role="header" style="width:100%;background:#9bbb58">
+            <span style="float: left;">
+                <a href="#" data-inline="true" data-role="button" class="ui-btn ui-corner-all ui-btn-icon-notext ui-icon-arrow-l" data-icon="arrow-l" data-iconpos="notext" style="border: #9bbb58; background-color: #9bbb58; "></a>
+            </span>
+            <div style="width: 70%; text-align: center; float: left;">签约公司</div>
+            <span style="float: right;" data-type="horizontal" data-inline="true" data-icon="map" title="地图">地图</span>
+            <div style="clear:both;"></div>
+
+            <div style="width:100%;">
+                <button data-inline="true" style="text-align:center; width:40%;" data-type="horizontal">提单地模式</button>
+                <button data-inline="true" style="width: 40%;">目的地模式</button>
+
+                <span style="float: right; vertical-align:bottom;padding-top:10px;width:10%" data-type="horizontal" data-inline="true" data-icon="map" title="提交">提交</span>
+            </div>
+            <div style="clear: both ;"></div>
+        </div>
+
+        <div data-role="content">
+
+            <div>
+                科技园东一区
+                <select name="switch" id="switch" data-role="slider">
+                    <option value="on"> </option>
+                    <option value="off"> </option>
+                </select>
+            </div>
+
+            <div>科技园东二区</div>
+            <div>科技园东二区</div>
+            <div>科技园东二区</div>
+            <div>科技园东二区</div>
+            <div>科技园东二区</div>
+        </div>
+        <div data-role="footer">
+
+        </div>
+    </div>
+
+    <!--18.签约公司2 -->
+    <div data-role="page" id="page11-1">
+        <div data-role="header" style="width:100%;background:#9bbb58">
+            <span style="float: left;">
+                <a href="#" data-inline="true" data-role="button" class="ui-btn ui-corner-all ui-btn-icon-notext ui-icon-arrow-l" data-icon="arrow-l" data-iconpos="notext" style="border: #9bbb58; background-color: #9bbb58; "></a>
+            </span>
+            <div style="width: 70%; text-align: center; float: left;">科技园东一区</div>
+            <span style="float: right;" data-type="horizontal" data-inline="true" data-icon="map" title="菜单">菜单</span>
+            <div style="clear:both;"></div>
+        </div>
+
+        <div data-role="content">
+
+            <div>地图</div>
+            <div style="background-color:#077609;color:white;">
+                科技园东一区包括东西南北  科技园东一区包括东西南北  科技园东一区包括东西南北  科技园东一区包括东西南北  科技园东一区包括东西南北  科技园东一区包括东西南北
+            </div>
+
+            <div style="padding: -10px  -10px -10px  -10px;" data-role="fieldcontain">
+                <div style="background-color: #9bbb58; " data-role="fieldcontain"> 主要建筑列表</div>
+                <div style="background-color: #9bbb58; " data-role="fieldcontain">
+                    <label for="cuidan">1</label>
+                    <input id="cuidan" data-inline="true" value="十大大厦" />
+                </div>
+
+                <div style="background-color: #9bbb58" data-role="fieldcontain">
+                    <label for="ftime">2</label>
+                    <input id="ftime" value="航天大厦" />
+                </div>
+                <div style="background-color: #9bbb58" data-role="fieldcontain">
+                    <label for="fmoney">3</label>
+                    <input id="fmoney" value="南山大厦" />
+                </div>
+            </div>
+        </div>
+        <div data-role="footer">
+
+
+        </div>
+    </div>
+
+    <!--19.历史账单 -->
+    <div data-role="page" id="page12">
+        <div data-role="header" style="width:100%;background:#9bbb58">
+            <span style="float: left;">
+                <a href="#" data-inline="true" data-role="button" class="ui-btn ui-corner-all ui-btn-icon-notext ui-icon-arrow-l" data-icon="arrow-l" data-iconpos="notext" style="border: #9bbb58; background-color: #9bbb58; "></a>
+            </span>
+            <div style="width: 70%; text-align: center; float: left;">历史账单</div>
+            <span style="float: right;" data-type="horizontal" data-inline="true" data-icon="map" title="地图">筛选</span>
+            <div style="clear:both;"></div>
+
+            <div style="width:100%;">
+                <button data-inline="true" style="text-align:center; width:25%;" data-type="horizontal">店铺方式</button>
+                <button data-inline="true" style="width: 25%;">时间方式</button>
+                <button data-inline="true" style="width: 25%;">地址方式</button>
+
+                <span style="float: right; vertical-align:bottom;padding-top:10px;width:10%" data-type="horizontal" data-inline="true" data-icon="map" title="提交">提交</span>
+            </div>
+            <div style="clear: both ;"></div>
+        </div>
+
+        <div data-role="content">
+
+
+            <div style="border: solid 1px #808080; padding: 5px 5px 5px 5px; ">
+                <!--一个详细列表信息--->
+                <div style="float:left">
+                    <div style="text-align:center; padding:10px 10px 0 10px ;">3月1日 </div>
+                </div>
+                <div style="float: right; background: #9bbb58;">
+                    <div>
+                        <span style="color:white;width:20%">份数:</span>
+                        <span style="background-color:white;width:30%">3</span>&nbsp;&nbsp;&nbsp;
+                        <div>
+                            <span style="color:white;width:20%">金额:</span>
+                            <span style="background-color:white;width:30%">￥188</span>
+                        </div>
+                    </div>
+                </div>
+                <div style="clear:both;"></div>
+            </div>
+            <div style="border: solid 1px #808080; padding: 5px 5px 5px 5px; ">
+                <!--一个详细列表信息--->
+                <div style="float:left">
+                    <div style="text-align:center; padding:10px 10px 0 10px ;">3月2日 </div>
+                </div>
+                <div style="float: right; background: #9bbb58;">
+                    <div>
+                        <span style="color:white;width:20%">份数:</span>
+                        <span style="background-color:white;width:30%">4</span>&nbsp;&nbsp;&nbsp;
+                        <div>
+                            <span style="color:white;width:20%">金额:</span>
+                            <span style="background-color:white;width:30%">￥288</span>
+                        </div>
+                    </div>
+                </div>
+                <div style="clear:both;"></div>
+            </div>
+            <div style="border: solid 1px #808080;padding:5px 5px 5px 5px;">
+                <!--一个详细列表信息--->
+                <div style="float:left">
+                    <div style="text-align:center; padding:10px 10px 0 10px ;">3月3日 </div>
+                </div>
+                <div style="float: right; background: #9bbb58;">
+                    <div>
+                        <span style="color:white;width:20%">份数:</span>
+                        <span style="background-color:white;width:30%">5</span>&nbsp;&nbsp;&nbsp;
+                        <div>
+                            <span style="color:white;width:20%">金额:</span>
+                            <span style="background-color:white;width:30%">￥388</span>
+                        </div>
+                    </div>
+                </div>
+                <div style="clear:both;"></div>
+            </div>
+
+
+
+
+        </div>
+        <div data-role="footer">
+
+
+        </div>
+    </div>
+
+    <!--20.公司客服 -->
+    <div data-role="page" id="page13">
+        <div data-role="header" style="width:100%;background:#9bbb58">
+            <span style="float: left;">
+                <a href="#" data-inline="true" data-role="button" class="ui-btn ui-corner-all ui-btn-icon-notext ui-icon-arrow-l" data-icon="arrow-l" data-iconpos="notext" style="border: #9bbb58; background-color: #9bbb58; "></a>
+            </span>
+            <div style="width: 70%; text-align: center; float: left;">公司客服</div>
+            <span style="float: right;" data-type="horizontal" data-inline="true" data-icon="map" title="地图"><a href="tel:075589596780">拨打</a></span>
+            <div style="clear:both;"></div>
+        </div>
+
+        <div data-role="content">
+            <img src="./img/palsoon.jpg" width=100% height=250px />
+            <div style="background-color:#0c520c">
+                <span style="color:white;width:20%">乐送员:</span>
+                <span style="background-color:white;width:30%">王就但</span>&nbsp;&nbsp;&nbsp;
+                <span style="color:white;width:20%">电话:</span>
+                <span style="background-color:white;width:30%">13987653456</span>
+            </div>
+
+
+            <div>
+                <div>申请增援</div>
+                <div>申请定位</div>
+                <div>申请话费</div>
+                <div>特殊救援</div>
+                <div>申请假期</div>
+                <div>特殊申请</div>
+            </div>
+
+
+        </div>
+        <div data-role="footer">
+
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <script type="text/javascript">
+        $(function () {
+            $("#sendFood").click(function () {
+                alert("送外卖咯");
+                return false;
+
+            });
+
+            $.mobile.collapsible.defaults = {
+                expandCueText: " click to expand contents",
+                collapseCueText: " click to collapse contents",
+                collapsedIcon: "arrow-d",
+                contentTheme: "inherit",
+                expandedIcon: "arrow-u",
+                iconpos: "left",
+                inset: true,
+                corners: true,
+                theme: "inherit",
+                mini: false
+            };
+            $("a[data-icon='arrow-l']").click(function () {
+                window.history.back();
+            });
+
+            $("#btnyanzhengma").click(function () {
+                var data = $.ajax({
+                    type: "GET",
+                    url: "data/getMobileYZM.xml",
+                    dataType: "xml",
+                    success: function (doc) {
+                        console.log(doc);
+                        var xml = doc;
+                        var replycode = $(xml).find("replyCode").text();
+                        var replyMsg = $(xml).find("replyMsg").text();
+                        var createTime = $(xml).find("createTime").text();
+                        var verifycode = $(xml).find("verifycode").text();
+                        alert("replycode:" + replycode + "|replyMsg:" + replyMsg + "|createTime:" + createTime + "|verifycode:" + verifycode);
+                    }
+                });
+            });
+
+
+
+
+
+        });
+
+    </script>
+
+
+
+
+</body>
+</html>

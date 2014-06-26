@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<root>
+	<head>
+		<service>
+			<replyCode>0</replyCode>
+			<replyMsg>订单查询成功</replyMsg>
+		</service>
+		<createTime>1402887417687</createTime>
+	</head>
+
+	<body>
+		<items name="orderInfo">
+			<item>
+				<DININGID>810</DININGID>
+				<REMINDERSTATUS>0</REMINDERSTATUS>
+				<DISTANCE>3953415</DISTANCE>
+				<NAME>水煮牛肉饭等</NAME>
+				<AMT>30</AMT>
+				<RN>1</RN>
+				<ORDERTIME>2014-06-13 11:00:10</ORDERTIME>
+				<LATITUDE>22.542267</LATITUDE>
+				<ORDERSTATUS>5</ORDERSTATUS>
+				<PICURL>images/dish/dish.png</PICURL>
+				<DININGPICURL>images/dining/mdl.png</DININGPICURL>
+				<DELIVERYTEL>15361556683</DELIVERYTEL>
+				<CANSENDRANK>0</CANSENDRANK>
+				<ORDERID>2283</ORDERID>
+				<DELIVERYNAME>12383</DELIVERYNAME>
+				<DININGNAME>嘉旺(科技园总店)</DININGNAME>
+				<SUM>2</SUM>
+				<LONGITUDE>113.949480</LONGITUDE>
+			</item>
+			<item>
+				<DININGID>810</DININGID>
+				<REMINDERSTATUS>0</REMINDERSTATUS>
+				<DISTANCE>3953415</DISTANCE>
+				<NAME>aaaaaaaaa</NAME>
+				<AMT>224</AMT>
+				<RN>2</RN>
+				<ORDERTIME>2014-05-19 11:14:55</ORDERTIME>
+				<LATITUDE>22.542267</LATITUDE>
+				<ORDERSTATUS>5</ORDERSTATUS>
+				<PICURL>images/dish/dish.png</PICURL>
+				<DININGPICURL>images/dining/mdl.png</DININGPICURL>
+				<DELIVERYTEL />
+				<CANSENDRANK>0</CANSENDRANK>
+				<ORDERID>2302</ORDERID>
+				<DELIVERYNAME />
+				<DININGNAME>嘉旺(科技园总店)</DININGNAME>
+				<SUM>2</SUM>
+				<LONGITUDE>113.949480</LONGITUDE>
+			</item>
+			<items name="pagingList">
+				<item>
+					<currentPage>1</currentPage>
+					<pageSize>10</pageSize>
+					<totalPages>1</totalPages>
+					<totalRows>7</totalRows>
+				</item>
+			</items>
+		</items>
+	</body>
+</root>

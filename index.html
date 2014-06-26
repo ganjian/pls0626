@@ -1,0 +1,104 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1,width=device-width" />
+        <link rel="stylesheet" type="text/css" href="css/icons.css" />
+    	<link rel="stylesheet" type="text/css" href="css/af.ui.css" title="default" />
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+        <script type="text/javascript" charset="utf-8" src="./appframework.js"></script>
+        <script type="text/javascript" charset="utf-8" src="./plugins/af.actionsheet.js"></script>
+		<script type="text/javascript" charset="utf-8" src="./plugins/af.css3animate.js"></script>
+        <script type="text/javascript" charset="utf-8" src="./plugins/af.passwordBox.js"></script>
+        <script type="text/javascript" charset="utf-8" src="plugins/af.scroller.js"></script>
+        <script type="text/javascript" charset="utf-8" src="./plugins/af.selectBox.js"></script>
+        <script type="text/javascript" charset="utf-8" src="./plugins/af.touchEvents.js"></script>
+        <script type="text/javascript" charset="utf-8" src="./plugins/af.touchLayer.js"></script>
+        <script type="text/javascript" charset="utf-8" src="./plugins/af.popup.js"></script>
+    
+        <script type="text/javascript" charset="utf-8" src="./ui/appframework.ui.js"></script>
+        <!-- <script type="text/javascript" charset="utf-8" src="./ui/transitions/all.js"></script> -->
+        <script type="text/javascript" charset="utf-8" src="./ui/transitions/fade.js"></script>
+        <script type="text/javascript" charset="utf-8" src="./ui/transitions/flip.js"></script>
+        <script type="text/javascript" charset="utf-8" src="./ui/transitions/pop.js"></script>
+        <script type="text/javascript" charset="utf-8" src="./ui/transitions/slide.js"></script>
+        <script type="text/javascript" charset="utf-8" src="./ui/transitions/slideDown.js"></script>
+        <script type="text/javascript" charset="utf-8" src="./ui/transitions/slideUp.js"></script>
+        <script type="text/javascript" charset="utf-8" src="./plugins/af.slidemenu.js"></script>
+        <script type="text/javascript" charset="utf-8" src="./jqMobile/jquery.js"></script>
+        <script type="text/javascript" charset="utf-8" src="./jqMobile/jquery.mobile-1.4.2.js"></script>
+        <script type="text/javascript" charset="utf-8" src="./jqMobile/jquery.mobile-1.4.2.css"></script>
+        <meta name="msapplication-tap-highlight" content="no" />
+        <title>拍乐送 - 送餐版</title>
+    </head>
+    <body>
+        <div id="afui">
+            <!--------首页的头------>
+            <header id="header_home" > 
+				<a class="menuButton" data-transition="none" style="float:left;margin-left:10px;margin-right:10px;" onclick="af.ui.toggleSideMenu()"></a>
+				<input id="num_search" type="text" placeholder="输入电话号码" style="float:left;margin-top:2px;">
+                <a class="icon magnifier big" data-transition="none" style="float:left;padding:10px" onclick="af.ui.toggleSideMenu()"></a>
+			</header>
+            
+
+
+            <!--------个人信息的头------>
+            <header id="header_user" > 
+				<a class="menuButton" data-transition="none" style="float:left;margin-left:10px;margin-right:10px;" onclick="af.ui.toggleSideMenu()"></a>
+				<h1>个人信息</h1>                
+			</header>
+            
+
+            <!--------联系我们的头------>
+            <header id="header_contact" > 
+				<a class="menuButton" data-transition="none" style="float:left;margin-left:10px;margin-right:10px;" onclick="af.ui.toggleSideMenu()"></a>
+				<h1>公司客服</h1>                
+			</header>
+            
+            <div id="content">
+				<!--  主页  -->
+            	<div id="panel_home" class="panel" data-defer="./html/panel_home.html" data-header="header_home" data-footer="none" selected="true" data-nav="side_menu">
+                </div>
+                <div id="panel_user" class="panel" data-defer="./html/panel_user.html" data-header="header_user" data-footer="none" data-nav="side_menu">
+                </div>
+                
+                <div id="panel_contact" class="panel" data-defer="./html/panel_contact.html" data-header="header_contact" data-footer="none" data-nav="side_menu">
+                </div>
+            
+            </div>
+            
+            
+            <!----------左侧边栏---------- -->
+			<nav id="side_menu" style="font-size:1.3em;">            	
+				<ul class="list">					
+					<li><a href="#panel_home">送餐首页</a></li>
+					<li><a href="#panel_user">个人信息</a></li>
+					<li><a href="#">积分中心</a></li>
+					<li><a href="#">分享美食</a></li>
+					<li><a href="#panel_contact">联系我们</a></li>
+				</ul>
+			</nav>
+        </div>
+        <script type="text/javascript" charset="utf-8" src="js/AjaxBase.js"></script>
+        <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+        <script type="text/javascript" charset="utf-8" src="js/DataForm.js"></script>
+        <script type="text/javascript" charset="utf-8" src="./basic.js"></script>
+        <script type="text/javascript" charset="utf-8" src="js/LocalStorage.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript">
+            app.initialize();
+        </script>
+
+        <script type="text/javascript">
+            // 百度地图API功能
+            var map = new BMap.Map("allmap"); // 创建Map实例
+            var point = new BMap.Point(116.404, 39.915); // 创建点坐标
+            map.centerAndZoom(point, 15); // 初始化地图,设置中心点坐标和地图级别。
+            map.addControl(new BMap.ZoomControl()); //添加地图缩放控件
+        </script>
+
+
+    </body>
+</html>

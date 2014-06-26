@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<root>
+	<head>
+		<service>
+			<replyCode>0</replyCode>
+			<replyMsg>菜品明细信息查询成功</replyMsg>
+		</service>
+		<createTime>1401331734937</createTime>
+	</head>
+	<body>
+		<items name="orderInfo">
+			<item>
+				<DININGID>763</DININGID>
+				<REMINDERSTATUS>0</REMINDERSTATUS>
+				<LEAVETIME>-1964195</LEAVETIME>
+				<SENDEND>17:12</SENDEND>
+				<AMT>33</AMT>
+				<ADDRESS>广东省深圳市南山区高新中二道</ADDRESS>
+				<SENDBEGIN>06:17</SENDBEGIN>
+				<ORDERNO>10001C000EY</ORDERNO>
+				<PAYTYPE>0</PAYTYPE>
+				<ORDERSTATUS>5</ORDERSTATUS>
+				<REMAININGTIME>251</REMAININGTIME>
+				<ORDERID>2221</ORDERID>
+				<TEL>15361556683</TEL>
+				<DININGNAME>享当当</DININGNAME>
+				<SUM>3</SUM>
+				<USERNAME>12383</USERNAME>
+				<HAVETIME>36:35</HAVETIME>
+				
+				<QUICKLYSEND>尽快送出（25分钟内）</QUICKLYSEND>
+			</item>
+		</items>
+		<items name="deliveryList">
+			<item>
+				<DELIVERYTEL>15361556683</DELIVERYTEL>
+				<USERNAME>12383</USERNAME>
+			</item>
+		</items>
+		<items name="dishList">
+			<item>
+				<DISHID>931</DISHID>
+				<PRICE>11.00</PRICE>
+				<AMT>33.00</AMT>
+				<SUM>3</SUM>
+				<DISHNAME>小炒黄牛肉</DISHNAME>
+				<PIECE>2</PIECE>
+				<ORDERTIME>2014-05-04</ORDERTIME>
+				<ORDERSTATUS>5</ORDERSTATUS>
+			</item>
+			<item>
+				<DISHID>852</DISHID>
+				<PRICE>11.00</PRICE>
+				<AMT>33.00</AMT>
+				<SUM>3</SUM>
+				<DISHNAME>乌江鱼</DISHNAME>
+				<PIECE>3</PIECE>
+				<ORDERTIME>2014-05-04</ORDERTIME>
+				<ORDERSTATUS>5</ORDERSTATUS>
+			</item>
+		</items>
+	</body>
+</root>

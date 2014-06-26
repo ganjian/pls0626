@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+	<head>
+		<service>
+			<replyCode>0</replyCode>
+			<replyMsg>生成短信验证码成功</replyMsg>
+		</service>
+		<createTime>1386817767187</createTime>
+	</head>
+	<body>
+		<items name="verifycode">
+			<item>
+				<verifycode>952069</verifycode>
+			</item>
+		</items>
+	</body>
+</root>

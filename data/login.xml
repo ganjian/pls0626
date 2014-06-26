@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+	<head>
+		<service>
+			<replyCode>0</replyCode>
+			<replyMsg>登录成功</replyMsg>
+		</service>
+		<createTime>1400662162921</createTime>
+	</head>
+	<body>
+		<items name="userInfo">
+			<item>
+				<REGISTTIME>2014-05-21</REGISTTIME>
+				<COMPANYNAME>XXXXX技术有限公司</COMPANYNAME>
+				<REMARK>备注1003</REMARK>
+				<SERVICEAREA>深圳市</SERVICEAREA>
+				<FLAVOR>5</FLAVOR>
+				<PICURL />
+				<USERPASSWORD>123456</USERPASSWORD>
+				<DIETDECLARATION>享受美享受生活</DIETDECLARATION>
+				<USERTYPE>0</USERTYPE>
+				<TEL>15361551003</TEL>
+				<PERSONALRESUME>个人介绍</PERSONALRESUME>
+				<SEX>0</SEX>
+				<ID>100</ID>
+				<USERNO>1536155100375</USERNO>
+				<USERNAME>胡说</USERNAME>
+			</item>
+		</items>
+	</body>
+</root>

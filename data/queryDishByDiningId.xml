@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+	<head>
+		<service>
+			<replyCode>0</replyCode>
+			<replyMsg>菜品信息查询成功</replyMsg>
+		</service>
+		<createTime>1402392724703</createTime>
+	</head>
+	<body>
+		<items name="dishList">
+			<item>
+				<DININGID>810</DININGID>
+				<DISHID>982</DISHID>
+				<DISHNO>002Q0F</DISHNO>
+				<DISHINTRODUCTION>发还看来公还</DISHINTRODUCTION>
+				<TYPE_DM>1</TYPE_DM>
+				<DISHCOMPRISE>12398</DISHCOMPRISE>
+				<DISHPICURL>images/dish/dish.png</DISHPICURL>
+				<TYPENO>01</TYPENO>
+				<TYPE_MC>热销</TYPE_MC>
+				<DISHREMARK>备注</DISHREMARK>
+				<SUPPLYTIME>1</SUPPLYTIME>
+				<DISHPICURL3>images/dish/pt333.png</DISHPICURL3>
+				<DISHPICURL4>images/dish/pt4444.png</DISHPICURL4>
+				<DISHPICURL1>images/dish/pt1.png</DISHPICURL1>
+				<ORDERCOUNT>36</ORDERCOUNT>
+				<DISHAMOUNT>99</DISHAMOUNT>
+				<DISHPICURL2>images/dish/pt2222.png</DISHPICURL2>
+				<DISHTYPENO>01001</DISHTYPENO>
+				<TASTE>辣</TASTE>
+				<DISHNAME>湖南菜馆</DISHNAME>
+				<DISH_CSI>0</DISH_CSI>
+				<PRICE>123.00</PRICE>
+			</item>
+			<item>
+				<DININGID>810</DININGID>
+				<DISHID>1003</DISHID>
+				<DISHNO>002Q0J</DISHNO>
+				<DISHINTRODUCTION>1002</DISHINTRODUCTION>
+				<TYPE_DM>1</TYPE_DM>
+				<DISHCOMPRISE>1002</DISHCOMPRISE>
+				<DISHPICURL />
+				<TYPENO>01</TYPENO>
+				<TYPE_MC>热销</TYPE_MC>
+				<DISHREMARK>备注</DISHREMARK>
+				<SUPPLYTIME>1</SUPPLYTIME>
+				<DISHPICURL3>images/dish/pt333.png</DISHPICURL3>
+				<DISHPICURL4>images/dish/pt4444.png</DISHPICURL4>
+				<DISHPICURL1>images/dish/pt1.png</DISHPICURL1>
+				<ORDERCOUNT>0</ORDERCOUNT>
+				<DISHAMOUNT>1882</DISHAMOUNT>
+				<DISHPICURL2>images/dish/pt2222.png</DISHPICURL2>
+				<DISHTYPENO>01002</DISHTYPENO>
+				<TASTE>辣</TASTE>
+				<DISHNAME>肯德基</DISHNAME>
+				<DISH_CSI>0</DISH_CSI>
+				<PRICE>100.00</PRICE>
+			</item>			
+		</items>
+	</body>
+</root>

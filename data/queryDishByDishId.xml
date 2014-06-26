@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+	<head>
+		<service>
+			<replyCode>0</replyCode>
+			<replyMsg>菜品信息查询成功</replyMsg>
+		</service>
+		<createTime>1402467974562</createTime>
+	</head>
+	<body>
+		<items name="dishInfo">
+			<item>
+				<DISHID>1023</DISHID>
+				<DININGID>810</DININGID>
+				<PRICE>15.00</PRICE>
+				<DISHCOMPRISE>主料：01009</DISHCOMPRISE>
+				<REMARK>备注01009</REMARK>
+				<SERVICEZONE>1000</SERVICEZONE>
+				<TYPENO>01</TYPENO>
+				<DISHINTRO>醋溜土01009</DISHINTRO>
+				<TYPE_MC>优惠</TYPE_MC>
+				<LATITUDE>22.542267</LATITUDE>
+				<TEL>0755-83432319</TEL>
+				<DISHTYPENO>01009</DISHTYPENO>
+				<DININGNAME>嘉旺(科技园总店)</DININGNAME>
+				<ORDER_CSI>5</ORDER_CSI>
+				<AVERAGETIME>0</AVERAGETIME>
+				<DISHNO>002Q0R</DISHNO>
+				<DININGINTRO>深圳市嘉旺餐饮连续多年入选中国餐饮百强企业。
+				</DININGINTRO>
+				<ADDRESS>广东省深圳市南山区高新南四道27</ADDRESS>
+				<TYPE_DM>3</TYPE_DM>
+				<DISHPICURL>images/dish/01009.png</DISHPICURL>
+				<AMOUNT>20</AMOUNT>
+				<WORKTIME_Z>20:00</WORKTIME_Z>
+				<DININGPICURL>images/dining/mdl.png</DININGPICURL>
+				<DISHID_CSI>0</DISHID_CSI>
+				<DISHPICURL3>images/dish/010093.png</DISHPICURL3>
+				<CANSENDRANK>1</CANSENDRANK>
+				<DISHPICURL4>images/dish/010094.png</DISHPICURL4>
+				<DISHPICURL1>images/dish/010091.png</DISHPICURL1>
+				<ORDERCOUNT>0</ORDERCOUNT>
+				<DISHPICURL2>images/dish/010092.png</DISHPICURL2>
+				<TASTE>3</TASTE>
+				<PREORDERCOUNT>0</PREORDERCOUNT>
+				<SPEED_CSI>4</SPEED_CSI>
+				<WORKTIME_Q>12:00</WORKTIME_Q>
+				<DISHNAME>醋溜土豆丝01009</DISHNAME>
+				<DISHMARK />
+				<LONGITUDE>113.949480</LONGITUDE>
+			</item>
+		</items>
+	</body>
+</root>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+	<head>
+		<service>
+			<replyCode>0</replyCode>
+			<replyMsg>注册成功</replyMsg>
+		</service>
+		<createTime>1386819128015</createTime>
+	</head>
+	<body>
+		<items name="userInfo">
+			<item>
+				<addressId1>4</addressId1>
+				<addressId0>3</addressId0>
+				<userId>2</userId>
+			</item>
+		</items>
+	</body>
+</root>
